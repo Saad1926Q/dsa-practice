@@ -6,6 +6,7 @@ I recently started learning DSA and will be adding the code for the problems I s
 
 ## Repo Structure
 
+```
 /dsa-practice
 │
 ├── /Data-Structures
@@ -39,52 +40,9 @@ I recently started learning DSA and will be adding the code for the problems I s
 │   └── README.md
 │
 └── README.md
-
-### 1. **Data Structures**
-
-This folder contains the implementations and explanations of various fundamental data structures. Each subfolder includes:
-- **Implementations**: JavaScript code for core operations like insertion, deletion, traversal, etc.
-
-**Subfolders**:
-- **Stacks**: Stack operations such as push, pop, peek, etc.
-- **Queues**: Implementation of both simple queues and circular queues.
-- **Linked Lists**: Singly and doubly linked lists.
-- **Trees**: Binary trees, binary search trees, tree traversal methods (DFS, BFS), etc.
-- **Graphs**: Graph representations and traversal algorithms (DFS, BFS).
-- **Heaps**: Min-heap, max-heap, and heap operations.
-- **Hash Tables**: Hashing, collision handling, and efficient lookups.
+```
 
 ---
-
-### 2. **Algorithms**
-
-This folder covers common algorithms, divided into different paradigms. It contains code implementations and notes for each category.
-
-**Subfolders**:
-- **Sorting**: Algorithms like Bubble Sort, Quick Sort, Merge Sort, etc.
-- **Searching**: Techniques like Binary Search, DFS, BFS, etc.
-- **Dynamic Programming**: Problems solved using dynamic programming techniques such as memoization and tabulation.
-- **Greedy**: Algorithms that make local optimal choices at each step (e.g., activity selection, coin change).
-- **Backtracking**: Exploring possible solutions by trying partial solutions and abandoning those that fail to satisfy constraints.
-- **Divide and Conquer**: Recursively breaking down problems into smaller subproblems (e.g., merge sort, quicksort).
-
----
-
-### 3. **Practice Problems**
-
-This folder includes problem-solving techniques categorized by data structure or algorithm type, allowing for focused practice on a specific topic.
-
-**Subfolders**:
-- **Arrays**: Problems like finding subarrays, sorting, and searching within arrays.
-- **Stacks**: Problems involving stack operations, balanced parentheses, etc.
-- **Queues**: Queue-related problems such as task scheduling, sliding windows, etc.
-- **Linked-Lists**: Operations on linked lists like reversal, merging, detecting cycles, etc.
-- **Trees**: Tree traversal, subtree problems, lowest common ancestor, etc.
-- **Graphs**: Graph problems involving pathfinding (DFS/BFS), shortest paths, etc.
-- **Dynamic-Programming**: Problems like the knapsack problem, longest subsequence problems, etc.
-
----
-
 
 ## Overview
 
@@ -132,8 +90,6 @@ Space complexity measures the amount of memory an algorithm uses relative to the
 
 - A simple algorithm that swaps two numbers may only require **O(1)** space (constant space).
 - An algorithm that stores a copy of an input array will have **O(n)** space complexity.
-
-![Space Complexity Graph](https://storage.googleapis.com/algodailyrandomassets/curriculum/fundamentals/space1.png)
 
 
 ### What is Recursion?

@@ -16,8 +16,6 @@ The `Stack` class represents a standard stack data structure, which follows the 
 
 - **`peek()`**: Returns the top element of the stack without removing it.
 
-### Stack Visualization
-![Stack Diagram](https://cdn.programiz.com/sites/tutorial2program/files/stack.png)
 
 ---
 
