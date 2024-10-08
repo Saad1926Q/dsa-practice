@@ -5,6 +5,8 @@
 ### Overview
 The basic queue implementation utilizes an array to store elements. This implementation follows the FIFO (First In, First Out) principle, where the first element added to the queue is the first to be removed.
 
+![Basic Queue](https://afteracademy.com/images/queue-and-its-basic-operations-operations-9bfc0ef1b53c11f9.png)
+
 ### Methods
 - **`enqueue(element)`**: Adds an element to the end of the queue. The new element is appended to the end of the array.
   
@@ -59,6 +61,8 @@ In the optimized queue, the **`dequeue`** operation becomes O(1) because it uses
 
 ### Overview
 The circular queue implementation provides a fixed-size array that wraps around to utilize space more efficiently. It maintains a `front` and `rear` index to track the current positions in the queue.
+
+![Circular Queue](https://media.geeksforgeeks.org/wp-content/uploads/Circular-queue_1.png)
 
 ### Methods
 - **`enqueue(val)`**: Adds an element to the end of the queue. If the queue is full, it logs an error message. If the queue is empty, it initializes both the front and rear indices; otherwise, it increments the rear index using the modulus operator to wrap around.

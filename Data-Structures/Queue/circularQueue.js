@@ -1,9 +1,9 @@
 class CircularQueue{
-    constructor(){
-        this.arr=new Array(5)
+    constructor(capacity){
+        this.arr=new Array(capacity)
         this.front=-1
         this.rear=-1
-        this.max_length=5
+        this.max_length=capacity
     }
 
     isEmpty(){
@@ -79,7 +79,7 @@ class CircularQueue{
     }
 }
 
-let cir=new CircularQueue()
+let cir=new CircularQueue(6)
 console.log(cir.isEmpty())
 cir.enqueue(12)
 cir.enqueue(2)
