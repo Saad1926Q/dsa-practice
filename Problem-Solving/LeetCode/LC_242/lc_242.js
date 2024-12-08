@@ -13,43 +13,43 @@ Output: true
 */
 
 s="hello"
-t="oleh"
+t="olehl"
 
 var isAnagram = function(s, t) {
-    let hashmap1=new Map()
-    let hashmap2=new Map()
+    let hashmap=new Map()
 
     let result=true
 
     for(let char of s){
-        if(hashmap1.has(char)){
-            let prev_freq=hashmap1.get(char)
-            hashmap1.set(char,prev_freq+1)
+        if(hashmap.has(char)){
+            let prev_freq=hashmap.get(char)
+            hashmap.set(char,prev_freq+1)
         }else{
-            hashmap1.set(char,1)
+            hashmap.set(char,1)
         }
     }
 
     for(let char of t){
-        if(!hashmap1.has(char)){
+        if(!hashmap.has(char)){
             return false
-        }else if(hashmap2.has(char)){
-            let prev_freq=hashmap2.get(char)
-            hashmap2.set(char,prev_freq+1)
+        }else if(hashmap.has(char)){
+            let prev_freq=hashmap.get(char)
+            if(prev_freq===1){
+                hashmap.delete(char)
+            }else{
+                hashmap.set(char,prev_freq-1)
+            }
         }else{
-            hashmap2.set(char,1)
+            hashmap.set(char,1)
         }
 
     }
 
-
-    hashmap1.forEach((freq,char) => {
-        if(hashmap2.get(char)!==freq){
-            result=false;
-        }
-    });
-
-    return result;
+    if(hashmap.size===0){
+     return true   
+    }else{
+        return false
+    }
 };
 
 console.log(isAnagram(s,t))
