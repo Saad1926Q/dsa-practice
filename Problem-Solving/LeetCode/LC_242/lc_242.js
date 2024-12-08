@@ -16,25 +16,25 @@ s="hello"
 t="oleh"
 
 var isAnagram = function(s, t) {
-    hashmap1=new Map()
-    hashmap2=new Map()
+    let hashmap1=new Map()
+    let hashmap2=new Map()
 
-    result=true
+    let result=true
 
-    for(char of s){
+    for(let char of s){
         if(hashmap1.has(char)){
-            prev_freq=hashmap1.get(char)
+            let prev_freq=hashmap1.get(char)
             hashmap1.set(char,prev_freq+1)
         }else{
             hashmap1.set(char,1)
         }
     }
 
-    for(char of t){
+    for(let char of t){
         if(!hashmap1.has(char)){
             return false
         }else if(hashmap2.has(char)){
-            prev_freq=hashmap2.get(char)
+            let prev_freq=hashmap2.get(char)
             hashmap2.set(char,prev_freq+1)
         }else{
             hashmap2.set(char,1)
@@ -42,8 +42,6 @@ var isAnagram = function(s, t) {
 
     }
 
-    console.log(hashmap1)
-    console.log(hashmap2)
 
     hashmap1.forEach((freq,char) => {
         if(hashmap2.get(char)!==freq){
