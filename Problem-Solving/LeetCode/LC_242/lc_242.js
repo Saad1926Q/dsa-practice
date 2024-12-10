@@ -39,8 +39,6 @@ var isAnagram = function(s, t) {
             }else{
                 hashmap.set(char,prev_freq-1)
             }
-        }else{
-            hashmap.set(char,1)
         }
 
     }
