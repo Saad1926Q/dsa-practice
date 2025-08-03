@@ -25,7 +25,6 @@ class Solution:
         reverse_subarray(nums,len(nums)-k,len(nums)-1)
         reverse_subarray(nums,0,len(nums)-1)
 
-        print(nums)
 
 
 
